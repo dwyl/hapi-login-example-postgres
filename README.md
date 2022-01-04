@@ -1,4 +1,4 @@
-git reset --soft HEAD~1# Hapi Register + Login Example (*using*) PostgreSQL
+# Hapi Register + Login Example (*using*) PostgreSQL
 
 A login form using hapi-auth-register, hapi-auth-login &amp; hapi-auth-jwt2 with a PostgreSQL DB
 
