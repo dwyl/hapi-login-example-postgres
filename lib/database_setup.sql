@@ -1,5 +1,5 @@
 /* first drop test tables from previous session so we have a clean database */
-/* DROP SCHEMA public cascade; http://stackoverflow.com/a/13823560/1148249 */
+/* DROP SCHEMA public cascade; https://stackoverflow.com/a/13823560/1148249 */
 CREATE SCHEMA IF NOT EXISTS public;
 /* DROP DATABASE IF EXISTS test; */
 /* CREATE DATABASE test; */
@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS people (
   password VARCHAR(60) NOT NULL
 );
 /* insert a person into the people table if it does not already exist */
-/* http://stackoverflow.com/questions/4069718/postgres-insert-if-does-not-exist-already */
+/* https://stackoverflow.com/questions/4069718/postgres-insert-if-does-not-exist-already */
 INSERT INTO people (email, name, password)
   SELECT email, name, password FROM people
   UNION
